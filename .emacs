@@ -6,6 +6,10 @@
 (show-paren-mode 1)
 
 
+; auto close brackets insertion
+(electric-pair-mode 1)
+
+
 ; Turn-on upper and low case with C-x C-u & C-x C-l
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
@@ -53,8 +57,7 @@
 (define-key global-map (kbd "C-c ;") 'iedit-mode)
 
 
-;; auto close brackets insertion
-(electric-pair-mode 1)
+; theme
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
